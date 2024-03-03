@@ -1,7 +1,7 @@
 import{View, Text, StyleSheet, Button, TextInput, KeyboardAvoidingView} from "react-native";
 import React from "react";
 
-  const loginScreen = () => {
+  const signinScreen = () => {
     return(
     <KeyboardAvoidingView  style = {styles.container} behavior="padding">
       
@@ -26,13 +26,12 @@ import React from "react";
       
       
       <Button 
-      title = "Go to signin"
-      onPress={()=> navigation.navigate("Signin")} //this fnc makes the button go to navigation with name login?
+      title = "Go to login"
+      onPress={()=> navigation.navigate("Login")} //this fnc makes the button go to navigation with name login?
       />
     </KeyboardAvoidingView>
     )
   };
-  export default loginScreen
 
   const styles = StyleSheet.create({
     container:{
